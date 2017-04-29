@@ -15,6 +15,7 @@ This project was something I started only a few days ago. I am creating a custom
 - Initial plugin creation.
 - onEnable and onDisable.
 - /help.
+
 1.0.1:
 - Plugin has been put on github
 - Chat events, and prefixes.

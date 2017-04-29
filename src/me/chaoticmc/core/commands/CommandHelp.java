@@ -19,7 +19,7 @@ public class CommandHelp implements CommandExecutor {
 			Player p = (Player) sender;
 			Chat.color(p, "&aHelp for &6ChaoticCore");
 			Chat.color(p, "&9/help &8- &7Returns this. - &7Have permission: &a&lTRUE");
-			
+			Chat.color(p, "&cSome commands are hidden because you have no permission. ");
 		}
 		return false;
 	}

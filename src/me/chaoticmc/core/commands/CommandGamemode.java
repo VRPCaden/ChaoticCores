@@ -14,11 +14,8 @@ public class CommandGamemode implements CommandExecutor{
 			sender.sendMessage(Chat.f("&4Please use as player"));
 			return false;
 		}else{
-			if(sender.isOp() || sender.hasPermission("")){
-				
-			}else{
-				sender.sendMessage(Chat.f("&4You dont have permissions"));
-			}
+			Player p = (Player) sender;
+			p.sendMessage("");
 		}
 		return false;
 	}

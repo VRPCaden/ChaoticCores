@@ -2,8 +2,17 @@ name: ChaoticCore
 main: me.chaoticmc.core.Core
 version: 1.0.0
 description: Custom core for ChaoticMC
-authors: [nikitimeYO, IEDs]
+authors: [nikitimeYO, IEDs, Synch]
 depend: [Vault]
 commands:
   help:
     description: Command help.
+  gmc:
+    description: Gamemode 1
+    permission: chaoticmc.command.gamemode
+  gms:
+    description: Gamemode 0
+    permission: chaoticmc.command.gamemode
+  gm:
+    description: Gamemode toggle
+    permission: chaoticmc.command.gamemode

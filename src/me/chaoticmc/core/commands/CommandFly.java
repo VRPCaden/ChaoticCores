@@ -13,16 +13,16 @@ public class CommandFly implements CommandExecutor{
 		Player p = (Player) sender;
 		if(p.isOp() == true || p.hasPermission("chaoticmc.command.fly")){
 			if(p.isFlying() == true){
-				p.setFlying(false);
-				sender.sendMessage(Chat.f("&4&l[&6&lFly&f&l]&6&l Fly Disabled"));
+				p.setAllowFlight(false);
+				sender.sendMessage(Chat.f("&aFlight&8 » &7Your fly mode has been &cdisabled"));
 				return false;
 			}else{
-				p.setFlying(true);
-				sender.sendMessage(Chat.f("&4&l[&6&lFly&f&l]&6&l Fly Enabled"));
+				p.setAllowFlight(true);
+				sender.sendMessage(Chat.f("&aFlight&8 » &7Your fly mode has been &aenabled"));
 				return false;
 			}
 		}else{
-			sender.sendMessage(Chat.f("&4You dont have permissions"));
+			sender.sendMessage(Chat.f("&cPermission&8 » &7You do not have permissions for this action."));
 			return false;
 		}
 	}

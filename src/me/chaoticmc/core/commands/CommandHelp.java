@@ -19,16 +19,16 @@ public class CommandHelp implements CommandExecutor {
 		if(cmd.getName().equalsIgnoreCase("help")) {
 			Player p = (Player) sender;
 			Chat.color(p, "&aHelp for &6ChaoticCore");
-			Chat.color(p, "&9/help &8- &7Returns this. - &7Have permission: &a&lTRUE");
-<<<<<<< HEAD
+			Chat.color(p, "&9/help &8- &7Returns this.");
 			Chat.color(p, "&cSome commands are hidden because you have no permission. ");
-=======
-			Chat.color(p, "&9/gm &8- Toggles your gamemode");
-			Chat.color(p, "&9/gmc &8- Puts you in creative");
-			Chat.color(p, "&9/gms &8- Puts you in surival");
-			Chat.color(p, "&9/fly &8- Turns fly on/off");
-			return false;
->>>>>>> f3bfe04ee7d584c4e576b3c7e9cf15ceea62a6d0
+
+			if(sender.hasPermission("chaoticmc.command.gamemode")) {
+				Chat.color(p, "&9/gm &8- &7Toggles your gamemode");
+				Chat.color(p, "&9/gmc &8- &7Puts you in creative");
+				Chat.color(p, "&9/gms &8- &7Puts you in surival");
+				Chat.color(p, "&9/fly &8- &7Turns fly on/off");
+			}
+
 		}
 		return false;
 	}

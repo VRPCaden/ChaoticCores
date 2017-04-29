@@ -15,50 +15,49 @@ public class CommandGamemode implements CommandExecutor{
 			sender.sendMessage(Chat.f("&4Please use as player"));
 			return false;
 		}else{
-<<<<<<< HEAD
-			Player p = (Player) sender;
-			p.sendMessage("");
-=======
+
+			
+			
 			if(cmd.equals("gm")){
 				if(sender.isOp() || sender.hasPermission("chaoticmc.command.gamemode")){
 					Player p = (Player) sender;
 					if(p.getGameMode() == GameMode.CREATIVE){
 						p.setGameMode(GameMode.SURVIVAL);
-						sender.sendMessage(Chat.f("&4&l[&6&lGamemode&f&l]&6&l Gamemode set to Survival"));
+						sender.sendMessage(Chat.f("&aGamemode&8 » &7Your gamemode was set to &cSurvival Mode&7."));
 						return false;
 					}else{
 						p.setGameMode(GameMode.CREATIVE);
-						sender.sendMessage(Chat.f("&4&l[&6&lGamemode&f&l]&6&l Gamemode set to Creative"));
+						sender.sendMessage(Chat.f("&aGamemode&8 » &7Your gamemode was set to &aCreative Mode&7."));
 						return false;
 					}
 				}else{
-					sender.sendMessage(Chat.f("&4You dont have permissions"));
+					sender.sendMessage(Chat.f("&cPermission&8 » &7You do not have permissions for this action."));
 					return false;
 				}
 			}
-			if(cmd.equals("gms")){
+			if(cmd.getName().equals("gms")){
 				if(sender.isOp() || sender.hasPermission("chaoticmc.command.gamemode")){
 					Player p = (Player) sender;
 					p.setGameMode(GameMode.SURVIVAL);
-					sender.sendMessage(Chat.f("&4&l[&6&lGamemode&f&l]&6&l Gamemode set to Survival"));
-					return false;
+					sender.sendMessage(Chat.f("&aGamemode&8 » &7Your gamemode was set to &cSurvival Mode&7."));
+					
 				}else{
-					sender.sendMessage(Chat.f("&4You dont have permissions"));
-					return false;
+					sender.sendMessage(Chat.f("&cPermission&8 » &7You do not have permissions for this action."));
+					
 				}
 			}
 			if(cmd.equals("gmc")){
 				if(sender.isOp() || sender.hasPermission("chaoticmc.command.gamemode")){
 					Player p = (Player) sender;
 					p.setGameMode(GameMode.CREATIVE);
-					sender.sendMessage(Chat.f("&4&l[&6&lGamemode&f&l]&6&l Gamemode set to Creative"));
+					sender.sendMessage(Chat.f("&aGamemode&8 » &7Your gamemode was set to &aCreative Mode&7."));
 					return false;
 				}else{
-					sender.sendMessage(Chat.f("&4You dont have permissions"));
+					sender.sendMessage(Chat.f("&cPermission&8 » &7You do not have permissions for this action."));
 					return false;
 				}
 			}
->>>>>>> f3bfe04ee7d584c4e576b3c7e9cf15ceea62a6d0
+
 		}
 		return false;
 	}

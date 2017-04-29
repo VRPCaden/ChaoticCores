@@ -21,7 +21,7 @@ This project was something I started only a few days ago. I am creating a custom
 - Chat events, and prefixes.
 - Cleaned up code.
 - Test server has been bought.
-- 
+
 1.0.2:
 - Gamemode command
 - "Hidden commands" message.

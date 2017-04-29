@@ -1,0 +1,2 @@
+# Core
+ChaoticMC Survival core.

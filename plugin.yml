@@ -1,0 +1,9 @@
+name: ChaoticCore
+main: me.chaoticmc.core.Core
+version: 1.0.0
+description: Custom core for ChaoticMC
+authors: [nikitimeYO, IEDs]
+depend: [Vault]
+commands:
+  help:
+    description: Command help.

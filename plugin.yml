@@ -22,3 +22,6 @@ commands:
   fly:
     description: Flight mode
     permission: chaoticmc.command.fly
+  god:
+    description: God yourself
+    permission: chaoticmc.command.god

@@ -1,5 +1,5 @@
 # Usage
 Any use of this project without my permission will be revoked.
 
-# Servers allowed usage:
+# Servers allowed:
 ChaoticMC.ddns.net

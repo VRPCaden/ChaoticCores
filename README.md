@@ -26,4 +26,5 @@ This project was something I started only a few days ago. I am creating a custom
 - Gamemode command
 - "Hidden commands" message.
 - % Chat bugfix
+- more
 

@@ -8,6 +8,8 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import me.chaoticmc.core.commands.CommandFly;
 import me.chaoticmc.core.commands.CommandGamemode;
 import me.chaoticmc.core.commands.CommandHelp;
 import me.chaoticmc.core.events.Events;
@@ -23,7 +25,9 @@ public class Core extends JavaPlugin {
 		getCommand("gm").setExecutor(new CommandGamemode());
 		getCommand("gmc").setExecutor(new CommandGamemode());
 		getCommand("gms").setExecutor(new CommandGamemode());
+		getCommand("fly").setExecutor(new CommandFly());
 	}
+	
 	public void registerEvents() {
 		//events here
 		PluginManager pm = Bukkit.getPluginManager();

@@ -20,7 +20,9 @@ public class CommandHelp implements CommandExecutor {
 			Player p = (Player) sender;
 			Chat.color(p, "&aHelp for &6ChaoticCore");
 			Chat.color(p, "&9/help &8- &7Returns this.");
-			Chat.color(p, "&cSome commands are hidden because you have no permission. ");
+			if(!(sender.hasPermission("chaoticmc.help.bypass"))) {
+				Chat.color(p, "&cSome commands are hidden because you have no permission. ");
+			}
 
 			if(sender.hasPermission("chaoticmc.command.gamemode")) {
 				Chat.color(p, "&9/gm &8- &7Toggles your gamemode");

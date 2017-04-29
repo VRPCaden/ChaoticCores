@@ -18,7 +18,7 @@ public class CommandGamemode implements CommandExecutor{
 
 			
 			
-			if(cmd.equals("gm")){
+			if(cmd.getName().equalsIgnoreCase("gm")){
 				if(sender.isOp() || sender.hasPermission("chaoticmc.command.gamemode")){
 					Player p = (Player) sender;
 					if(p.getGameMode() == GameMode.CREATIVE){
@@ -35,7 +35,7 @@ public class CommandGamemode implements CommandExecutor{
 					return false;
 				}
 			}
-			if(cmd.getName().equals("gms")){
+			if(cmd.getName().equalsIgnoreCase("gms")){
 				if(sender.isOp() || sender.hasPermission("chaoticmc.command.gamemode")){
 					Player p = (Player) sender;
 					p.setGameMode(GameMode.SURVIVAL);
@@ -46,7 +46,7 @@ public class CommandGamemode implements CommandExecutor{
 					
 				}
 			}
-			if(cmd.equals("gmc")){
+			if(cmd.getName().equalsIgnoreCase("gmc")){
 				if(sender.isOp() || sender.hasPermission("chaoticmc.command.gamemode")){
 					Player p = (Player) sender;
 					p.setGameMode(GameMode.CREATIVE);

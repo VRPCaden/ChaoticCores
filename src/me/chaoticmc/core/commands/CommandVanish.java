@@ -11,6 +11,7 @@ import org.bukkit.entity.Player;
 import me.chaoticmc.core.util.Chat;
 
 public class CommandVanish implements CommandExecutor{
+	ArrayList<Player> vanished = new ArrayList<Player>();
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] a) {
@@ -19,17 +20,17 @@ public class CommandVanish implements CommandExecutor{
 			return false;
 		}else{
 			if(sender.hasPermission("chaoticmc.command.vanish")){
-				ArrayList<Player> vanished = new ArrayList<Player>();
 				Player p = (Player) sender;
-				for(Player players: Bukkit.getServer().getOnlinePlayers()){
+				for(Player players: Bukkit.getOnlinePlayers()){
 					if(vanished.contains(p)){
-						players.showPlayer(p);
 						vanished.remove(p);
+						players.showPlayer(p);
 						sender.sendMessage(Chat.f("&aVanish&7 » &7You are now &cUn-Vanished"));
 						return false;
-					}else{
-						players.hidePlayer(p);
+					}
+					if(!vanished.contains(p)){
 						vanished.add(p);
+						players.hidePlayer(p);
 						sender.sendMessage(Chat.f("&aVanish&7 » &7You are now &aVanished"));
 						return false;
 					}

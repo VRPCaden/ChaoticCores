@@ -13,6 +13,7 @@ import me.chaoticmc.core.commands.CommandFly;
 import me.chaoticmc.core.commands.CommandGamemode;
 import me.chaoticmc.core.commands.CommandGod;
 import me.chaoticmc.core.commands.CommandHelp;
+import me.chaoticmc.core.commands.CommandVanish;
 import me.chaoticmc.core.events.Events;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.economy.Economy;
@@ -27,11 +28,14 @@ public class Core extends JavaPlugin {
 		getCommand("gmc").setExecutor(new CommandGamemode());
 		getCommand("gms").setExecutor(new CommandGamemode());
 		getCommand("fly").setExecutor(new CommandFly());
+<<<<<<< HEAD
 		getCommand("god").setExecutor(new CommandGod());
+=======
+		getCommand("v").setExecutor(new CommandVanish());
+>>>>>>> 64bf9520c8fad2c50ee0bcd3eec167f91969bff4
 	}
 	
 	public void registerEvents() {
-		//events here
 		PluginManager pm = Bukkit.getPluginManager();
 		pm.registerEvents(new Events(), this);
 		pm.registerEvents(new CommandGod(), this);

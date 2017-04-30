@@ -9,26 +9,18 @@ commands:
     description: Command help.
   gmc:
     description: Gamemode 1
-    permission: chaoticmc.command.gamemode
     aliases: [gamemodec]
   gms:
     description: Gamemode 0
-    permission: chaoticmc.command.gamemode
     aliases: [gamemodes]
   gm:
     description: Gamemode toggle
-    permission: chaoticmc.command.gamemode
     aliases: [gamemode]
   fly:
     description: Flight mode
-    permission: chaoticmc.command.fly
-<<<<<<< HEAD
   god:
     description: God yourself
-    permission: chaoticmc.command.god
-=======
   v:
-    description: Vanish toggle
-    permission: chaoticmc.command.vanish
+    description: Vanish toggle 
     aliases: [vanish]
->>>>>>> 64bf9520c8fad2c50ee0bcd3eec167f91969bff4
+

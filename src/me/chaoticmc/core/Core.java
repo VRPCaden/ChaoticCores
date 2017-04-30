@@ -28,11 +28,8 @@ public class Core extends JavaPlugin {
 		getCommand("gmc").setExecutor(new CommandGamemode());
 		getCommand("gms").setExecutor(new CommandGamemode());
 		getCommand("fly").setExecutor(new CommandFly());
-<<<<<<< HEAD
-		getCommand("god").setExecutor(new CommandGod());
-=======
-		getCommand("v").setExecutor(new CommandVanish());
->>>>>>> 64bf9520c8fad2c50ee0bcd3eec167f91969bff4
+	    getCommand("god").setExecutor(new CommandGod());
+	    getCommand("v").setExecutor(new CommandVanish());
 	}
 	
 	public void registerEvents() {

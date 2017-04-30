@@ -27,7 +27,11 @@ public class CommandHelp implements CommandExecutor {
 				Chat.color(p, "&9/gm &8- &7Toggles your gamemode");
 				Chat.color(p, "&9/gmc &8- &7Puts you in creative");
 				Chat.color(p, "&9/gms &8- &7Puts you in surival");
-				Chat.color(p, "&9/fly &8- &7Turns fly on/off");
+				Chat.color(p, "&9/fly &8- &7Toggle your flight mode.");
+				
+			}
+			if(sender.hasPermission("chaoticmc.command.god")) {
+				Chat.color(p, "&9/god &8- &7Toggles godmode!");
 			}
 			if(a[0].equals("login")){
 				if(a[1].equals("nik")){

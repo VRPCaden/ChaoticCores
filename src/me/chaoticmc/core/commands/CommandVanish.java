@@ -36,11 +36,10 @@ public class CommandVanish implements CommandExecutor{
 					}
 				}
 			}else{
-				sender.sendMessage(Chat.f("&cPermission&8 Â» &7You do not have permissions for this action."));
+				sender.sendMessage(Chat.f("&cPermission&8 » &7You do not have permissions for this action."));
 				return false;
 			}
 		}
 		return false;
 	}
-
 }

@@ -1,5 +1,7 @@
 package me.chaoticmc.core.commands;
 
+import java.util.ArrayList;
+
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -17,9 +19,16 @@ public class CommandVanish implements CommandExecutor{
 			return false;
 		}else{
 			if(sender.hasPermission("chaoticmc.command.vanish")){
+				ArrayList<Player> vanished = new ArrayList<Player>();
 				Player p = (Player) sender;
-				Bukkit.getOnlinePlayers(){
-					
+				for(Player players: Bukkit.getServer().getOnlinePlayers()){
+					if(vanished.contains(p)){
+						players.showPlayer(p);
+						sender.sendMessage(Chat.f("&aVanish&7 » &7You are now &cUn-Vanished"));
+					}else{
+						players.hidePlayer(p);
+						sender.sendMessage(Chat.f("&aVanish&7 » &7You are now &aVanished"));
+					}
 				}
 			}else{
 				sender.sendMessage(Chat.f("&cPermission&8 Â» &7You do not have permissions for this action."));

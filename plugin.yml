@@ -22,3 +22,7 @@ commands:
   fly:
     description: Flight mode
     permission: chaoticmc.command.fly
+  v:
+    description: Vanish toggle
+    permission: chaoticmc.command.vanish
+    aliases: [vanish]

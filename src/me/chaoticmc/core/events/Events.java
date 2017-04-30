@@ -6,7 +6,6 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import me.chaoticmc.core.Core;
 import me.chaoticmc.core.util.Chat;
-import net.milkbowl.vault.permission.Permission;
 
 public class Events implements Listener {
 	

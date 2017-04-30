@@ -24,10 +24,14 @@ public class CommandVanish implements CommandExecutor{
 				for(Player players: Bukkit.getServer().getOnlinePlayers()){
 					if(vanished.contains(p)){
 						players.showPlayer(p);
+						vanished.remove(p);
 						sender.sendMessage(Chat.f("&aVanish&7 » &7You are now &cUn-Vanished"));
+						return false;
 					}else{
 						players.hidePlayer(p);
+						vanished.add(p);
 						sender.sendMessage(Chat.f("&aVanish&7 » &7You are now &aVanished"));
+						return false;
 					}
 				}
 			}else{

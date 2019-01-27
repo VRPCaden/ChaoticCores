@@ -28,8 +28,8 @@ public class Core extends JavaPlugin {
 		getCommand("gmc").setExecutor(new CommandGamemode());
 		getCommand("gms").setExecutor(new CommandGamemode());
 		getCommand("fly").setExecutor(new CommandFly());
-	    getCommand("god").setExecutor(new CommandGod());
-	    getCommand("v").setExecutor(new CommandVanish());
+	    	getCommand("god").setExecutor(new CommandGod());
+	    	getCommand("v").setExecutor(new CommandVanish());
 	}
 	
 	public void registerEvents() {
@@ -38,8 +38,8 @@ public class Core extends JavaPlugin {
 		pm.registerEvents(new CommandGod(), this);
 	}
 	public static Permission permission = null;
-    public static Economy economy = null;
-    public static Chat chat = null;
+    	public static Economy economy = null;
+    	public static Chat chat = null;
 
     private boolean setupPermissions()
     {
